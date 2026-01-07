@@ -1,0 +1,24 @@
+cat > .gitignore << 'EOF'
+# Ignore all large media by default
+*.mp4
+*.mov
+*.avi
+*.mkv
+*.wav
+*.flac
+
+# Allow the final background video
+!assets/parkour.mp4
+
+# Allow raw video pointer (LFS)
+!parkour_raw.mp4
+
+# Ignore any downloaded meme/music assets
+assets/memes/*
+assets/music/*
+
+# Node / editor noise (future-proofing)
+node_modules/
+.vscode/
+.DS_Store
+EOF
